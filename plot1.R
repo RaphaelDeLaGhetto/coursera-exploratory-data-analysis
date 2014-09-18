@@ -21,3 +21,6 @@ totalEmissions <- tapply(NEI$Emissions, NEI$year, sum)
 
 
 # Plot the totalEmissions data (barplot)
+png('plot1.png')
+barplot(totalEmissions/1000, main=expression('Total emissions of PM'[2.5]*' in the United States from 1999 to 2008'), xlab='Years', ylab=expression('Kilotons of PM'[2.5]))
+dev.off()
