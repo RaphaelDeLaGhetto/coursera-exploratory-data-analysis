@@ -35,8 +35,7 @@ g <- g + ylab(expression('Tons of PM'[2.5]))
 g <- g + xlab('Years')
 g <- g + annotate('text', x=3.8, y=1750, col='blue', label='Overall trend', size=4)
 
-
-# Plot the totalEmissions data (barplot)
+# Plot
 png('plot3.png')
 print(g)
 dev.off()
