@@ -57,6 +57,7 @@ system, make a plot showing the total PM<sub>2.5</sub> emission from all sources
 _Have total emissions from PM<sub>2.5</sub> decreased in the Baltimore City, Maryland (`fips == "24510"`) from 1999 to 2008? Use
 the base plotting system to make a plot answering this question._
 
+![plot2.png](https://raw.githubusercontent.com/RaphaelDeLaGhetto/coursera-exploratory-data-analysis/master/plot2.png)
 
 ## plot3
 
