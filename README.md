@@ -85,4 +85,4 @@ _Compare emissions from motor vehicle sources in Baltimore City with emissions f
 County, California (`fips == "06037"`). Which city has seen greater changes over time in motor vehicle emissions?_
 
 
-
+![plot6.png](https://raw.githubusercontent.com/RaphaelDeLaGhetto/coursera-exploratory-data-analysis/master/plot6.png)
