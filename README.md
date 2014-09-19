@@ -77,6 +77,8 @@ _Across the United States, how have emissions from coal combustion-related sourc
 
 _How have emissions from motor vehicle sources changed from 1999–2008 in Baltimore City?_
 
+![plot5.png](https://raw.githubusercontent.com/RaphaelDeLaGhetto/coursera-exploratory-data-analysis/master/plot5.png)
+
 ## plot6
 
 _Compare emissions from motor vehicle sources in Baltimore City with emissions from motor vehicle sources in Los Angeles
