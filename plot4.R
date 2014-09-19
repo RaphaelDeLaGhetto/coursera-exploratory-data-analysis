@@ -4,9 +4,6 @@
 # _Across the United States, how have emissions from coal combustion-related sources changed from 1999–2008?_
 #
 
-# This, of course, assumes that the ggplot2 package has already been installed
-library('ggplot2')
-
 # Unzip the dataset, if it hasn't already been unzipped 
 if (!is.element('summarySCC_PM25.rds', dir()) | !is.element('summarySCC_PM25.rds', dir())) {
     unzip('exdata-data-NEI_data.zip')

@@ -13,7 +13,6 @@ if (!is.element('summarySCC_PM25.rds', dir()) | !is.element('summarySCC_PM25.rds
 
 # Load the data, as suggested in the assignment description
 NEI <- readRDS("summarySCC_PM25.rds")
-SCC <- readRDS("Source_Classification_Code.rds")
 
 # This inquiry concerns total emissions over the four years for which data has been provided.
 # Find the total emissions for each of these years
