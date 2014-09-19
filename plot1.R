@@ -19,8 +19,13 @@ SCC <- readRDS("Source_Classification_Code.rds")
 # Find the total emissions for each of these years
 totalEmissions <- tapply(NEI$Emissions, NEI$year, sum)
 
+# Though the trend is clear, this remove any ambiguity concerning the overall trend in emissions levels
+trend <- lm(totalEmissions/1000~c(1:4))
 
 # Plot the totalEmissions data (barplot)
 png('plot1.png')
-barplot(totalEmissions/1000, main=expression('Total emissions of PM'[2.5]*' in the United States from 1999 to 2008'), xlab='Years', ylab=expression('Kilotons of PM'[2.5]))
+barplot(totalEmissions/1000, main=expression('Total emissions of PM'[2.5]*' in the United States from 1999 to 2008'),
+        xlab='Years', ylab=expression('Kilotons of PM'[2.5]), ylim=c(0, 8000))
+abline(trend, lwd=2, col='blue')
+text(4.1, 6000, labels='Overall trend', col='blue')
 dev.off()
