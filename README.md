@@ -71,6 +71,8 @@ sources have seen decreases in emissions from 1999–2008 for Baltimore City? Wh
 
 _Across the United States, how have emissions from coal combustion-related sources changed from 1999–2008?_
 
+![plot4.png](https://raw.githubusercontent.com/RaphaelDeLaGhetto/coursera-exploratory-data-analysis/master/plot4.png)
+
 ## plot5
 
 _How have emissions from motor vehicle sources changed from 1999–2008 in Baltimore City?_
