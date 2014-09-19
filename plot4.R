@@ -20,7 +20,7 @@ SCC <- readRDS("Source_Classification_Code.rds")
 # It was determined, through trial and error, that the Short.Name, EI.Sector, and SCC.Level.Four columns
 # meet the specified regex criteria.
 regex <- '([Cc]oal.*[Cc]omb)|([Cc]omb.*[Cc]oal)'
-relevant <- grepl(regex, SCC$Short.Name) || grepl(regex, SCC$EI.Sector) || grepl(regex, SCC$SCC.Level.Four)
+relevant <- grepl(regex, SCC$Short.Name) | grepl(regex, SCC$EI.Sector) | grepl(regex, SCC$SCC.Level.Four)
 sccCodes <- SCC[relevant, 'SCC']
 
 # This inquiry concerns coal-fired emissions from across the United States for the four years for which data has been provided.
@@ -34,7 +34,7 @@ trend <- lm(coalEmissions/1000 ~ c(1:4))
 # Plot
 png('plot4.png')
 barplot(coalEmissions/1000, main=expression('Total coal-combustion emissions of PM'[2.5]*' in the US (1999 to 2008)'),
-        xlab='Years', ylab=expression('Kilotons of PM'[2.5]), ylim=c(0,8000))
+        xlab='Years', ylab=expression('Kilotons of PM'[2.5]), ylim=c(0,700))
 abline(trend, lwd=2, col='blue')
-text(4.1, 6000, labels='Overall trend', col='blue')
+text(4.1, 600, labels='Overall trend', col='blue')
 dev.off()
